@@ -1,0 +1,547 @@
+/* Google fonts link  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+/* Bootstrap icons link  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  scroll-behavior: smooth !important;
+
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*-------------------------------------- navbar css starts here ------------------- */
+
+.navbar-brand {
+  color: #000000 !important;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+
+}
+
+
+.showshadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
+button.navbar-toggler {
+  /* background-color: rgb(253, 233, 236); */
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-brand:hover {
+  color: pink;
+}
+
+
+
+.navbar {
+  background-color: pink;
+}
+
+.offcanvas-header {
+  background-color: pink;
+  color: #000000;
+}
+
+.offcanvas-body {
+  background-color: pink;
+  color: #000000;
+}
+
+#menu .nav-item a:hover {
+  color: palevioletred;
+}
+
+#menu .nav-item a {
+  color: #000000;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#menu .nav-item ul li {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+
+
+.toggleicon i {
+  color: #000000;
+  font-size: 26px;
+
+}
+
+@media (max-width:762px) {
+  div#navbarOffcanvasLg {
+    width: 70% !important;
+  }
+}
+
+#menu li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#menu a {
+  display: block;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #000000;
+}
+
+#menu a:hover {
+  color: palevioletred;
+}
+
+#menu li>ul {
+  position: absolute;
+  top: 10;
+}
+
+#menu li:hover>ul {
+  display: block;
+}
+
+#menu li:hover>ul:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 10px;
+  height: 100%;
+}
+
+
+ul.dropdown-menu {
+  background-color: rgb(250, 233, 236);
+}
+
+a.dropdown-item {
+  color: #000000 !important;
+}
+
+a.dropdown-item:hover {
+  color: #ffffff !important;
+  background-color: palevioletred !important;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 18px !important;
+}
+
+
+.login span {
+  font-size: 18px;
+}
+
+/*---------- input search icon starts here ------- */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+
+i.bi.bi-bag-check-fill {
+  cursor: pointer;
+}
+
+.input {
+  border-style: none;
+  height: 30px;
+  width: 50px;
+  padding: 10px;
+  outline: none;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+  background-color: transparent;
+  padding-right: 40px;
+  color: #fff;
+}
+
+.input::placeholder,
+.input {
+  font-size: 17px;
+}
+
+.input::placeholder {
+  color: #8f8f8f;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-style: none;
+  border-radius: 50%;
+  pointer-events: painted;
+  background-color: transparent;
+  transition: .2s linear;
+  margin-top: -8px;
+}
+
+.icon i {
+  color: #000000;
+}
+
+.icon:focus~.input,
+.input:focus {
+  box-shadow: none;
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+
+@media (max-width:990px) {
+  .input-wrapper {
+    display: none;
+  }
+}
+
+/*---------- input search icon ends here ------- */
+
+
+/*-------------------------------------- navbar css ends here ------------------- */
+
+.main-section {
+  background-color: rgb(253, 221, 226);
+}
+
+.main-section .container-fluid {
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+.text-area h1 {
+  color: #000000;
+}
+
+@media (max-width:768px) {
+  .text-area h1 {
+    color: #ffffff;
+  }
+}
+
+.text-area h1 span::before {
+  content: '';
+  color: rgb(255, 108, 133);
+  animation: profile 5s infinite;
+}
+
+@keyframes profile {
+  0% {
+    content: 'Brands'
+  }
+
+  50% {
+    content: 'Purchase'
+  }
+
+  100% {
+    content: 'Best Seller'
+  }
+}
+
+.image-section {
+  background-image: url("mainimg.jpg");
+  width: 100%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center center;
+  clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+
+.shop-button {
+  background-color: pink;
+  width: max-content;
+  padding: 8px 23px;
+  cursor: pointer;
+}
+
+.shop-button:hover {
+  background-color: palevioletred;
+  transition-duration: 1s;
+
+}
+
+.shop-button a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.shop-button a:hover {
+  color: white;
+  transition-duration: 1s;
+}
+
+.text-area p {
+  text-align: justify;
+}
+
+@media (max-width: 990px) {
+  .image-section {
+    display: none;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .shop-button {
+    margin: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .text-section {
+    background-image: url("mainimg.jpg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .text-area {
+    padding: 13px;
+  }
+}
+
+/*----------------------------------- main-section ends here ------------------------ */
+
+
+
+/*------------------------------------- why shop us section css starts here ------------------------------ */
+.shop-box-text> :first-child {
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+.shop-box {
+  background-color: pink;
+  color: #000000;
+}
+
+/*------------------------------------- why shop us section css ends here ------------------------------ */
+
+/* ----------------------------------- ladies bag section css starts here ---------------------- */
+
+.ladiesbagtext {
+  margin-top: 20%;
+  padding: 5%;
+}
+
+.ladiesbagpara {
+  text-align: justify;
+}
+
+.choosecolor svg {
+  cursor: pointer;
+}
+
+/* ----------------------------------- ladies bag section css ends here ---------------------- */
+
+
+/*------------------------------ new arrivals section css starts here ------------------- */
+.heading h2 {
+  color: #000000;
+}
+
+.product-img {
+  overflow: hidden;
+}
+
+.product-img img {
+  object-fit: cover;
+  height: 300px;
+  width: 400px;
+  transition: 1s ease;
+}
+
+.product-img img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+.product-detail {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1)
+}
+
+.product-detail-text p {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.price-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+.product-link button {
+  padding: 3px 5px;
+  text-decoration: none;
+  color: #000000 !important;
+  background-color: pink;
+  cursor: pointer;
+  border: none !important;
+}
+
+
+.price-div p {
+  margin-bottom: 0;
+  color: #000000;
+}
+
+/*------------------------------ new arrivals section css ends here ------------------- */
+
+
+
+
+/*--------------------------------- last-section css starts here  ---------------------------------------------*/
+.last-section {
+  background-color: pink;
+}
+
+.last-section-para {
+  font-size: 43px;
+  text-align: center;
+}
+
+
+.last-section img {
+  cursor: pointer;
+}
+
+
+/* ------------------- footer css starts here  -------------------- */
+.footer-area {
+  text-align: left;
+}
+
+.footer-area h5 {
+  font-weight: 500;
+}
+
+.footer-area p {
+  margin-bottom: 7px;
+}
+
+.footer-area a {
+  color: #000000;
+
+}
+
+.footer-area a:hover {
+  color: palevioletred;
+}
+
+
+.footer-links ul {
+  padding-left: 0;
+}
+
+.footer-links ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: palevioletred;
+}
+
+.newletter-input .inpbtn {
+  position: absolute;
+  width: fit-content;
+  border-color: #000000;
+  background-color: palevioletred;
+  color: #fff;
+  padding: 5px;
+  margin-top: -1px;
+  border-radius: 0px !important;
+}
+
+.newletter-input .inpemail:focus-visible {
+  outline: none;
+}
+
+.footer-sociallinks ul {
+  display: flex;
+  column-gap: 15px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.footer-sociallinks ul li {
+  list-style: none;
+}
+
+.footer-sociallinks ul li a {
+  text-decoration: none;
+  padding: 7px;
+  border: 1px solid #000000;
+}
+
+.footer-sociallinks ul li a:hover {
+  background-color: palevioletred;
+  color: #ffffff;
+  transition-duration: 1s;
+}
+
+.footer-sociallinks ul li a i {
+  font-size: 15px;
+}
+
+/* ------------- footer css ends here  ----------------- */
+
+/*--------------------------------- last-section css ends here  ---------------------------------------------*/
